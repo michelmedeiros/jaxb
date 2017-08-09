@@ -1,0 +1,22 @@
+<solicitacoes versao="stringst" datahora="string" operador="string" lis="string">
+  <!--1 or more repetitions:-->
+  <entidade codigo="100" chave="stringstringstri">
+    <pacientes>
+      <!--1 or more repetitions:-->
+      <paciente codigo_lis="string" nome="string" datanasc="string" sexo="s" cep="string" cidade="string" endereco="string" estado="st"/>
+    </pacientes>
+    <!--Optional:-->
+    <medicos>
+      <!--Zero or more repetitions:-->
+      <medico crm="string" nome="string" telefone="string" email="string" datanasc="string"/>
+    </medicos>
+    <!--1 or more repetitions:-->
+    <solicitacao codigo_lis="string" codigo_paciente="string" crm="string" observacao="string" medicamentos="string" data="string" dados_adicionais="string">
+      <!--1 or more repetitions:-->
+      <amostra identificacao="string" descricao="string" material="100" seqimpressao="string">
+        <!--1 or more repetitions:-->
+        <exame codigo="string" dados_adicionais="string" id_lis="string"/>
+      </amostra>
+    </solicitacao>
+  </entidade>
+</solicitacoes>
